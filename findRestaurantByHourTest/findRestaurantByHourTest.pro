@@ -1,0 +1,12 @@
+include(findrestaurantbyhourtest.pri)
+include(../restaurant_finder-lib/restaurant_finder.pri)
+QT += testlib
+QT -= gui
+
+CONFIG += qt console warn_on depend_includepath testcase
+CONFIG -= app_bundle
+
+TEMPLATE = app
+
+SOURCES +=  tst_findrestaurantbyhourtest.cpp
+
